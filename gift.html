@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Headliner Announcement</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #ff00aa, #ff8800);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Helvetica Neue', sans-serif;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.75);
+      padding: 70px;
+      border-radius: 20px;
+      box-shadow: 0 0 60px rgba(0,0,0,0.5);
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 {
+      font-size: 52px;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+
+    .highlight {
+      color: #ff4dc4;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>APRIL 11TH, 2026</h2>
+    <h1>HEADLINER ANNOUNCEMENT</h1>
+    <p>Under the desert lights...</p>
+    <p>We're going to <span class="highlight">COACHELLA</span>.</p>
+    <br>
+    <p>And when <span class="highlight">Justin Bieber</span> takes the stage,</p>
+    <p>just know…</p>
+    <p>Love will be louder than any headliner.</p>
+    <br>
+    <p>This was my way of saying I love you.</p>
+  </div>
+
+</body>
+</html>
