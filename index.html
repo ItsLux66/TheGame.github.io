@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Constellations</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to top, #0f0f0f, #2a1e1e);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .box {
+      background: rgba(0,0,0,0.7);
+      padding: 60px;
+      border-radius: 15px;
+      box-shadow: 0 0 40px rgba(255,255,255,0.1);
+    }
+
+    input {
+      padding: 14px;
+      font-size: 18px;
+      width: 260px;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 14px 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      background: #ff00aa;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff4dc4;
+    }
+
+    .error {
+      margin-top: 15px;
+      color: #ff8080;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>The desert already knows.</h2>
+    <p>Read between the lines.</p>
+
+    <input type="text" id="password" placeholder="Enter the cipher..." />
+    <br>
+    <button onclick="checkPassword()">Unlock</button>
+
+    <div id="error" class="error"></div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      var input = document.getElementById("password").value;
+      if (input.toUpperCase() === "COACHELLA") {
+        window.location.href = "gift.html";
+      } else {
+        document.getElementById("error").innerText = "Not quite. Look closer.";
+      }
+    }
+  </script>
+
+</body>
+</html>
